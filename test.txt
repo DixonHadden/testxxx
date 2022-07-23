@@ -1,0 +1,315 @@
+port: 7890
+socks-port: 7891
+external-controller: 0.0.0.0:9090
+allow-lan: false
+mode: Rule
+log-level: info
+hosts: {}
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  fallback:
+  - 8.8.8.8
+  - 1.1.1.1
+  - tls://dns.rubyfish.cn:853
+  - tls://1.0.0.1:853
+  - tls://dns.google:853
+  - https://dns.rubyfish.cn/dns-query
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: 序号 43598 2.59Mb/s HK 19:48:17
+  alterId: '0'
+  cipher: none
+  network: ws
+  port: '25897'
+  server: gkdcm.myjcbbcn.top
+  type: vmess
+  uuid: 1c9b05e3-d116-43bb-beab-b4381b0d96a2
+  ws-opts: {}
+- name: 序号 625 2.44Mb/s HK 19:29:18
+  server: cm.spacez.cloud
+  port: 30000
+  type: trojan
+  password: c9a3a61d-5d49-4158-9e60-6fa32684b122
+  sni: cm.spacez.cloud
+  skip-cert-verify: true
+  udp: true
+- name: 序号 27901 2.42Mb/s JP 19:40:56
+  alterId: '0'
+  cipher: auto
+  network: ws
+  port: '443'
+  server: 113.142.205.92
+  tls: true
+  type: vmess
+  uuid: 96d14945-08f3-4968-8cec-9c2672f1d966
+  ws-opts:
+    path: /1024vws?ed=2048
+    headers:
+      host: cc2.tianxie.us.eu.org
+- name: 序号 43609 1.67Mb/s JP 19:50:13
+  alterId: '0'
+  cipher: none
+  network: ws
+  port: '25887'
+  server: gkdcu.myjcbbcn.top
+  type: vmess
+  uuid: 1c9b05e3-d116-43bb-beab-b4381b0d96a2
+  ws-opts: {}
+- name: 序号 43589 1.52Mb/s JP 19:48:03
+  alterId: '0'
+  cipher: none
+  port: '23006'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43582 1.42Mb/s TW 19:48:06
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43585 1.32Mb/s TW 19:48:20
+  alterId: '0'
+  cipher: none
+  port: '23037'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43581 1.31Mb/s TW 19:48:23
+  alterId: '0'
+  cipher: none
+  port: '23011'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43593 1.26Mb/s US 19:48:27
+  alterId: '0'
+  cipher: none
+  port: '23020'
+  server: hd-unicom.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 16719 1.14Mb/s TW 19:42:44
+  server: 103.177.32.147
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8247a4cf6ed4
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: twd1000tw001.fengchiline.xyz
+    path: ''
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: 序号 40288 1.14Mb/s TW 19:54:02
+  server: 111.45.29.75
+  port: 30003
+  type: trojan
+  password: c9a3a61d-5d49-4158-9e60-6fa32684b122
+  skip-cert-verify: true
+  udp: true
+- name: 序号 43579 1.12Mb/s TW 19:48:50
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43580 1.08Mb/s HK 19:48:53
+  alterId: '0'
+  cipher: none
+  port: '23010'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 43586 1.03Mb/s TW 19:50:17
+  alterId: '0'
+  cipher: none
+  port: '23038'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 41975 1.01Mb/s HK 19:27:49
+  cipher: aes-128-gcm
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    mux: true
+    skip-cert-verify: true
+    path: /
+  port: 443
+  server: 47.243.73.34
+  type: ss
+- name: 序号 38423 0.96Mb/s HK 19:52:44
+  server: pp1.zhengzhongfeizhu.xyz
+  port: 34004
+  type: trojan
+  password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c
+  skip-cert-verify: true
+  udp: true
+- name: 序号 43584 0.95Mb/s TW 19:50:21
+  alterId: '0'
+  cipher: none
+  port: '23036'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: c54e9299-a087-4635-b1cd-4dbe47a3ac11
+  ws-opts: {}
+- name: 序号 16732 0.95Mb/s KR 19:17:18
+  server: 27.102.106.171
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 40d5089833fc
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: wxw1000Mkrline002.fengchiline.xyz
+    path: ''
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: 序号 17175 0.85Mb/s TW 19:53:21
+  server: 14.29.124.168
+  type: ss
+  port: 25215
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: 序号 43601 0.84Mb/s HK 19:50:28
+  alterId: '0'
+  cipher: none
+  network: ws
+  port: '25896'
+  server: gkdcu.myjcbbcn.top
+  type: vmess
+  uuid: 1c9b05e3-d116-43bb-beab-b4381b0d96a2
+  ws-opts: {}
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 手动切换
+  - 自动测速
+  - 故障转移
+  - 负载均衡
+  - 序号 43598 2.59Mb/s HK 19:48:17
+  - 序号 625 2.44Mb/s HK 19:29:18
+  - 序号 27901 2.42Mb/s JP 19:40:56
+  - 序号 43609 1.67Mb/s JP 19:50:13
+  - 序号 43589 1.52Mb/s JP 19:48:03
+  - 序号 43582 1.42Mb/s TW 19:48:06
+  - 序号 43585 1.32Mb/s TW 19:48:20
+  - 序号 43581 1.31Mb/s TW 19:48:23
+  - 序号 43593 1.26Mb/s US 19:48:27
+  - 序号 16719 1.14Mb/s TW 19:42:44
+  - 序号 40288 1.14Mb/s TW 19:54:02
+  - 序号 43579 1.12Mb/s TW 19:48:50
+  - 序号 43580 1.08Mb/s HK 19:48:53
+  - 序号 43586 1.03Mb/s TW 19:50:17
+  - 序号 41975 1.01Mb/s HK 19:27:49
+  - 序号 38423 0.96Mb/s HK 19:52:44
+  - 序号 43584 0.95Mb/s TW 19:50:21
+  - 序号 16732 0.95Mb/s KR 19:17:18
+  - 序号 17175 0.85Mb/s TW 19:53:21
+  - 序号 43601 0.84Mb/s HK 19:50:28
+- name: 手动切换
+  type: select
+  proxies: &id001
+  - 序号 43598 2.59Mb/s HK 19:48:17
+  - 序号 625 2.44Mb/s HK 19:29:18
+  - 序号 27901 2.42Mb/s JP 19:40:56
+  - 序号 43609 1.67Mb/s JP 19:50:13
+  - 序号 43589 1.52Mb/s JP 19:48:03
+  - 序号 43582 1.42Mb/s TW 19:48:06
+  - 序号 43585 1.32Mb/s TW 19:48:20
+  - 序号 43581 1.31Mb/s TW 19:48:23
+  - 序号 43593 1.26Mb/s US 19:48:27
+  - 序号 16719 1.14Mb/s TW 19:42:44
+  - 序号 40288 1.14Mb/s TW 19:54:02
+  - 序号 43579 1.12Mb/s TW 19:48:50
+  - 序号 43580 1.08Mb/s HK 19:48:53
+  - 序号 43586 1.03Mb/s TW 19:50:17
+  - 序号 41975 1.01Mb/s HK 19:27:49
+  - 序号 38423 0.96Mb/s HK 19:52:44
+  - 序号 43584 0.95Mb/s TW 19:50:21
+  - 序号 16732 0.95Mb/s KR 19:17:18
+  - 序号 17175 0.85Mb/s TW 19:53:21
+  - 序号 43601 0.84Mb/s HK 19:50:28
+- name: 自动测速
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  proxies: *id001
+- name: 故障转移
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  proxies: *id001
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  strategy: round-robin
+  interval: 30
+  tolerance: 100
+  proxies: *id001
+- name: 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 全球拦截
+  type: select
+  proxies:
+  - REJECT
+rules:
+- IP-CIDR,10.0.0.0/8,全球直连,no-resolve
+- IP-CIDR,100.64.0.0/10,全球直连,no-resolve
+- IP-CIDR,127.0.0.0/8,全球直连,no-resolve
+- IP-CIDR,172.16.0.0/12,全球直连,no-resolve
+- IP-CIDR,192.168.0.0/16,全球直连,no-resolve
+- IP-CIDR,198.18.0.0/16,全球直连,no-resolve
+- DOMAIN-SUFFIX,localhost,全球直连
+- DOMAIN-SUFFIX,cn,全球直连
+- DOMAIN-SUFFIX,com.cn,全球直连
+- DOMAIN-SUFFIX,google.com,节点选择
+- DOMAIN-SUFFIX,youtube.com,节点选择
+- DOMAIN-SUFFIX,googlevideo.com,节点选择
+- DOMAIN-SUFFIX,telegram.org,节点选择
+- DOMAIN-SUFFIX,github.com,节点选择
+- DOMAIN-SUFFIX,raw.githubusercontent.com,节点选择
+- DOMAIN-SUFFIX,yahoo.com,节点选择
+- DOMAIN-SUFFIX,twitch.tv,节点选择
+- DOMAIN-SUFFIX,msftconnecttest.com,节点选择
+- PROCESS-NAME,aria2c,全球直连
+- PROCESS-NAME,fdm,全球直连
+- PROCESS-NAME,Folx,全球直连
+- PROCESS-NAME,NetTransport,全球直连
+- PROCESS-NAME,Thunder,全球直连
+- PROCESS-NAME,Transmission,全球直连
+- PROCESS-NAME,uTorrent,全球直连
+- PROCESS-NAME,WebTorrent,全球直连
+- PROCESS-NAME,WebTorrent Helper,全球直连
+- PROCESS-NAME,DownloadService,全球直连
+- PROCESS-NAME,Weiyun,全球直连
+- GEOIP,CN,全球直连
+- MATCH,节点选择
