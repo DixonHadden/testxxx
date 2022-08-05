@@ -1,0 +1,586 @@
+port: 7890
+socks-port: 7891
+external-controller: 0.0.0.0:9090
+allow-lan: false
+mode: Rule
+log-level: info
+hosts: {}
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  fallback:
+  - 8.8.8.8
+  - 1.1.1.1
+  - tls://dns.rubyfish.cn:853
+  - tls://1.0.0.1:853
+  - tls://dns.google:853
+  - https://dns.rubyfish.cn/dns-query
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: 序号 9836 0.03Mb/s 90 HK 17:00:04
+  server: 14.29.124.174
+  port: 11016
+  type: ss
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: 序号 10162 0.08Mb/s 99 HK 17:00:04
+  cipher: aes-128-cfb
+  password: QazEdcTgb159@$*
+  port: '11032'
+  server: 14.29.124.174
+  type: ss
+- name: 序号 43731 0.0Mb/s 109 CN 17:00:04
+  server: 106.12.168.13
+  port: 28617
+  type: vmess
+  uuid: a667dcb7-ac0a-46b3-fdfa-cfa745792559
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a.189.cn
+- name: 序号 11604 0.01Mb/s 119 TW 17:00:04
+  server: 14.29.124.168
+  port: 24005
+  type: ss
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: 序号 43684 0.0Mb/s 128 HK 17:00:04
+  server: 43.129.158.202
+  port: 38009
+  type: vmess
+  uuid: 7fe50249-0f9c-42bb-9815-842bec303691
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 序号 43906 0.0Mb/s 131 HK 17:00:04
+  server: 43.129.175.67
+  port: 20010
+  type: vmess
+  uuid: 479add91-7e33-44aa-c19a-33f43c2092cf
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+- name: 序号 42361 0.0Mb/s 133 US 15:31:17
+  server: dnspod.as4812.com
+  type: ss
+  port: 5510
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42371 0.0Mb/s 134 US 16:57:39
+  server: dnspod.as4812.com
+  type: ss
+  port: 5501
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42369 0.0Mb/s 143 US 12:23:11
+  server: dnspod.as4812.com
+  type: ss
+  port: 5504
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42355 0.0Mb/s 143 US 16:40:45
+  server: dnspod.as4812.com
+  type: ss
+  port: 5513
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42365 0.0Mb/s 146 US 15:48:30
+  server: dnspod.as4812.com
+  type: ss
+  port: 5507
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42388 0.0Mb/s 160 HK 12:31:27
+  cipher: aes-256-gcm
+  password: '1999.1999'
+  port: '32101'
+  server: n2.gogoosub1.xyz
+  type: ss
+- name: 序号 42387 0.0Mb/s 165 US 15:43:07
+  cipher: aes-256-gcm
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  port: '5516'
+  server: dnspod.as4812.com
+  type: ss
+- name: 序号 42353 0.0Mb/s 168 KH 16:41:51
+  server: dnspod.as4812.com
+  type: ss
+  port: 5519
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42413 0.0Mb/s 174 TW 08:28:21
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 0b3a10bb-b536-49ab-a4f7-26a0abbfda8d
+  ws-opts: {}
+- name: 序号 44030 0.0Mb/s 174 TW 07:40:50
+  alterId: '0'
+  cipher: none
+  port: '23011'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: f507da78-3dfb-4697-828f-51a9cac5bb8a
+  ws-opts: {}
+- name: 序号 42351 0.0Mb/s 175 HK 17:08:03
+  server: 14.119.87.189
+  type: vmess
+  port: 45250
+  uuid: aad02103-85de-47a6-b2c4-db394fbae465
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 序号 42374 0.0Mb/s 176 HK 12:50:43
+  cipher: aes-256-gcm
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  port: '5500'
+  server: dnspod.as4812.com
+  type: ss
+- name: 序号 44661 0.0Mb/s 177 TW 16:44:28
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 611bec80-96dc-4d60-8a06-79301dbe965a
+  ws-opts: {}
+- name: 序号 44031 0.0Mb/s 180 TW 16:00:43
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: f507da78-3dfb-4697-828f-51a9cac5bb8a
+  ws-opts: {}
+- name: 序号 32945 0.0Mb/s 183 HK 15:27:53
+  password: EhXJmI
+  port: 100
+  server: 120.233.7.225
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 序号 42533 0.0Mb/s 185 JP 20:48:58
+  server: 155.248.178.174
+  type: vmess
+  port: 9999
+  uuid: 0bf21d96-29bc-393d-818a-a490cb112acd
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 序号 44551 0.0Mb/s 185 TW 06:16:10
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 98e43361-2b45-47fc-ac3d-6eceb4c66d73
+  ws-opts: {}
+- name: 序号 42554 0.0Mb/s 190 TW 16:56:24
+  alterId: '0'
+  cipher: none
+  port: '23011'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: efdc1d55-a07d-45f7-83f3-f1ff20fb9cdd
+  ws-opts: {}
+- name: 序号 44554 0.0Mb/s 197 TW 10:44:37
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 98e43361-2b45-47fc-ac3d-6eceb4c66d73
+  ws-opts: {}
+- name: 序号 42354 0.0Mb/s 198 HK 15:35:41
+  server: dnspod.as4812.com
+  type: ss
+  port: 5555
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42552 0.0Mb/s 198 TW 16:35:09
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: efdc1d55-a07d-45f7-83f3-f1ff20fb9cdd
+  ws-opts: {}
+- name: 序号 42527 0.0Mb/s 199 SG 13:08:00
+  server: 54.255.194.219
+  type: vmess
+  port: 10000
+  uuid: 0bf21d96-29bc-393d-818a-a490cb112acd
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 序号 44663 0.0Mb/s 205 TW 13:01:45
+  alterId: '0'
+  cipher: none
+  port: '23011'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 611bec80-96dc-4d60-8a06-79301dbe965a
+  ws-opts: {}
+- name: 序号 44553 0.0Mb/s 206 TW 12:36:29
+  alterId: '0'
+  cipher: none
+  port: '23011'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 98e43361-2b45-47fc-ac3d-6eceb4c66d73
+  ws-opts: {}
+- name: 序号 42416 0.0Mb/s 206 TW 15:55:47
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 0b3a10bb-b536-49ab-a4f7-26a0abbfda8d
+  ws-opts: {}
+- name: 序号 46557 0.0Mb/s 208 TW 16:46:51
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 5e0acd9e-5bb4-42b2-8f62-2dde61956ac0
+  ws-opts: {}
+- name: 序号 42425 0.0Mb/s 208 SG 11:42:00
+  alterId: '0'
+  cipher: none
+  port: '23014'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 0b3a10bb-b536-49ab-a4f7-26a0abbfda8d
+  ws-opts: {}
+- name: 序号 42358 0.0Mb/s 208 US 16:41:19
+  server: dnspod.as4812.com
+  type: ss
+  port: 5564
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42359 0.0Mb/s 210 HK 15:41:56
+  server: dnspod.as4812.com
+  type: ss
+  port: 5567
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 42424 0.0Mb/s 210 SG 15:45:10
+  alterId: '0'
+  cipher: none
+  port: '23013'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 0b3a10bb-b536-49ab-a4f7-26a0abbfda8d
+  ws-opts: {}
+- name: 序号 42356 0.0Mb/s 211 JP 16:47:08
+  server: dnspod.as4812.com
+  type: ss
+  port: 5558
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+- name: 序号 45213 0.0Mb/s 212 HK 11:27:26
+  alterId: '0'
+  cipher: none
+  network: ws
+  port: '25898'
+  server: gkdcm.myjcbbcn.top
+  type: vmess
+  uuid: 8f2823ab-9c9a-4277-9a23-df00614a5440
+  ws-opts: {}
+- name: 序号 44559 0.0Mb/s 212 TW 16:43:15
+  alterId: '0'
+  cipher: none
+  port: '23039'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 98e43361-2b45-47fc-ac3d-6eceb4c66d73
+  ws-opts: {}
+- name: 序号 44664 0.0Mb/s 212 TW 12:23:54
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 611bec80-96dc-4d60-8a06-79301dbe965a
+  ws-opts: {}
+- name: 序号 42558 0.0Mb/s 214 TW 11:33:23
+  alterId: '0'
+  cipher: none
+  port: '23037'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: efdc1d55-a07d-45f7-83f3-f1ff20fb9cdd
+  ws-opts: {}
+- name: 序号 43473 0.0Mb/s 217 TW 16:07:44
+  alterId: '0'
+  cipher: none
+  port: '23012'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: a0552c80-a5c1-4e4a-b27c-8e820ae41621
+  ws-opts: {}
+- name: 序号 44028 0.0Mb/s 223 TW 16:00:39
+  alterId: '0'
+  cipher: none
+  port: '23009'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: f507da78-3dfb-4697-828f-51a9cac5bb8a
+  ws-opts: {}
+- name: 序号 44036 0.0Mb/s 223 TW 15:42:41
+  alterId: '0'
+  cipher: none
+  port: '23039'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: f507da78-3dfb-4697-828f-51a9cac5bb8a
+  ws-opts: {}
+- name: 序号 44040 0.0Mb/s 226 SG 12:41:10
+  alterId: '0'
+  cipher: none
+  port: '23014'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: f507da78-3dfb-4697-828f-51a9cac5bb8a
+  ws-opts: {}
+- name: 序号 43778 0.0Mb/s 226 SG 12:43:11
+  alterId: '0'
+  cipher: none
+  port: '23014'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 7e7861b3-68ee-47f8-9221-42cf473a01c6
+  ws-opts: {}
+- name: 序号 41655 0.0Mb/s 226 TW 02:42:56
+  server: tanz-moble.01download.xyz
+  type: vmess
+  port: 35074
+  uuid: 70b16905-4706-3b4a-8f27-bdd2a74bf432
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 序号 45111 0.0Mb/s 226 US 16:10:11
+  alterId: '0'
+  cipher: none
+  network: ws
+  port: '25898'
+  server: gkdcm.myjcbbcn.top
+  type: vmess
+  uuid: 80d3f6d5-b38f-43af-a944-b66f4c716bd0
+  ws-opts: {}
+- name: 序号 44669 0.0Mb/s 228 TW 07:34:16
+  alterId: '0'
+  cipher: none
+  port: '23039'
+  server: hd-moble.01download.xyz
+  type: vmess
+  uuid: 611bec80-96dc-4d60-8a06-79301dbe965a
+  ws-opts: {}
+- name: 序号 42364 0.0Mb/s 230 US 12:50:46
+  server: dnspod.as4812.com
+  type: ss
+  port: 6611
+  password: bb980150-d129-4a69-8888-948cbed42df5
+  cipher: aes-256-gcm
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 手动切换
+  - 自动测速
+  - 故障转移
+  - 负载均衡
+  - 序号 9836 0.03Mb/s 90 HK 17:00:04
+  - 序号 10162 0.08Mb/s 99 HK 17:00:04
+  - 序号 43731 0.0Mb/s 109 CN 17:00:04
+  - 序号 11604 0.01Mb/s 119 TW 17:00:04
+  - 序号 43684 0.0Mb/s 128 HK 17:00:04
+  - 序号 43906 0.0Mb/s 131 HK 17:00:04
+  - 序号 42361 0.0Mb/s 133 US 15:31:17
+  - 序号 42371 0.0Mb/s 134 US 16:57:39
+  - 序号 42369 0.0Mb/s 143 US 12:23:11
+  - 序号 42355 0.0Mb/s 143 US 16:40:45
+  - 序号 42365 0.0Mb/s 146 US 15:48:30
+  - 序号 42388 0.0Mb/s 160 HK 12:31:27
+  - 序号 42387 0.0Mb/s 165 US 15:43:07
+  - 序号 42353 0.0Mb/s 168 KH 16:41:51
+  - 序号 42413 0.0Mb/s 174 TW 08:28:21
+  - 序号 44030 0.0Mb/s 174 TW 07:40:50
+  - 序号 42351 0.0Mb/s 175 HK 17:08:03
+  - 序号 42374 0.0Mb/s 176 HK 12:50:43
+  - 序号 44661 0.0Mb/s 177 TW 16:44:28
+  - 序号 44031 0.0Mb/s 180 TW 16:00:43
+  - 序号 32945 0.0Mb/s 183 HK 15:27:53
+  - 序号 42533 0.0Mb/s 185 JP 20:48:58
+  - 序号 44551 0.0Mb/s 185 TW 06:16:10
+  - 序号 42554 0.0Mb/s 190 TW 16:56:24
+  - 序号 44554 0.0Mb/s 197 TW 10:44:37
+  - 序号 42354 0.0Mb/s 198 HK 15:35:41
+  - 序号 42552 0.0Mb/s 198 TW 16:35:09
+  - 序号 42527 0.0Mb/s 199 SG 13:08:00
+  - 序号 44663 0.0Mb/s 205 TW 13:01:45
+  - 序号 44553 0.0Mb/s 206 TW 12:36:29
+  - 序号 42416 0.0Mb/s 206 TW 15:55:47
+  - 序号 46557 0.0Mb/s 208 TW 16:46:51
+  - 序号 42425 0.0Mb/s 208 SG 11:42:00
+  - 序号 42358 0.0Mb/s 208 US 16:41:19
+  - 序号 42359 0.0Mb/s 210 HK 15:41:56
+  - 序号 42424 0.0Mb/s 210 SG 15:45:10
+  - 序号 42356 0.0Mb/s 211 JP 16:47:08
+  - 序号 45213 0.0Mb/s 212 HK 11:27:26
+  - 序号 44559 0.0Mb/s 212 TW 16:43:15
+  - 序号 44664 0.0Mb/s 212 TW 12:23:54
+  - 序号 42558 0.0Mb/s 214 TW 11:33:23
+  - 序号 43473 0.0Mb/s 217 TW 16:07:44
+  - 序号 44028 0.0Mb/s 223 TW 16:00:39
+  - 序号 44036 0.0Mb/s 223 TW 15:42:41
+  - 序号 44040 0.0Mb/s 226 SG 12:41:10
+  - 序号 43778 0.0Mb/s 226 SG 12:43:11
+  - 序号 41655 0.0Mb/s 226 TW 02:42:56
+  - 序号 45111 0.0Mb/s 226 US 16:10:11
+  - 序号 44669 0.0Mb/s 228 TW 07:34:16
+  - 序号 42364 0.0Mb/s 230 US 12:50:46
+- name: 手动切换
+  type: select
+  proxies: &id001
+  - 序号 9836 0.03Mb/s 90 HK 17:00:04
+  - 序号 10162 0.08Mb/s 99 HK 17:00:04
+  - 序号 43731 0.0Mb/s 109 CN 17:00:04
+  - 序号 11604 0.01Mb/s 119 TW 17:00:04
+  - 序号 43684 0.0Mb/s 128 HK 17:00:04
+  - 序号 43906 0.0Mb/s 131 HK 17:00:04
+  - 序号 42361 0.0Mb/s 133 US 15:31:17
+  - 序号 42371 0.0Mb/s 134 US 16:57:39
+  - 序号 42369 0.0Mb/s 143 US 12:23:11
+  - 序号 42355 0.0Mb/s 143 US 16:40:45
+  - 序号 42365 0.0Mb/s 146 US 15:48:30
+  - 序号 42388 0.0Mb/s 160 HK 12:31:27
+  - 序号 42387 0.0Mb/s 165 US 15:43:07
+  - 序号 42353 0.0Mb/s 168 KH 16:41:51
+  - 序号 42413 0.0Mb/s 174 TW 08:28:21
+  - 序号 44030 0.0Mb/s 174 TW 07:40:50
+  - 序号 42351 0.0Mb/s 175 HK 17:08:03
+  - 序号 42374 0.0Mb/s 176 HK 12:50:43
+  - 序号 44661 0.0Mb/s 177 TW 16:44:28
+  - 序号 44031 0.0Mb/s 180 TW 16:00:43
+  - 序号 32945 0.0Mb/s 183 HK 15:27:53
+  - 序号 42533 0.0Mb/s 185 JP 20:48:58
+  - 序号 44551 0.0Mb/s 185 TW 06:16:10
+  - 序号 42554 0.0Mb/s 190 TW 16:56:24
+  - 序号 44554 0.0Mb/s 197 TW 10:44:37
+  - 序号 42354 0.0Mb/s 198 HK 15:35:41
+  - 序号 42552 0.0Mb/s 198 TW 16:35:09
+  - 序号 42527 0.0Mb/s 199 SG 13:08:00
+  - 序号 44663 0.0Mb/s 205 TW 13:01:45
+  - 序号 44553 0.0Mb/s 206 TW 12:36:29
+  - 序号 42416 0.0Mb/s 206 TW 15:55:47
+  - 序号 46557 0.0Mb/s 208 TW 16:46:51
+  - 序号 42425 0.0Mb/s 208 SG 11:42:00
+  - 序号 42358 0.0Mb/s 208 US 16:41:19
+  - 序号 42359 0.0Mb/s 210 HK 15:41:56
+  - 序号 42424 0.0Mb/s 210 SG 15:45:10
+  - 序号 42356 0.0Mb/s 211 JP 16:47:08
+  - 序号 45213 0.0Mb/s 212 HK 11:27:26
+  - 序号 44559 0.0Mb/s 212 TW 16:43:15
+  - 序号 44664 0.0Mb/s 212 TW 12:23:54
+  - 序号 42558 0.0Mb/s 214 TW 11:33:23
+  - 序号 43473 0.0Mb/s 217 TW 16:07:44
+  - 序号 44028 0.0Mb/s 223 TW 16:00:39
+  - 序号 44036 0.0Mb/s 223 TW 15:42:41
+  - 序号 44040 0.0Mb/s 226 SG 12:41:10
+  - 序号 43778 0.0Mb/s 226 SG 12:43:11
+  - 序号 41655 0.0Mb/s 226 TW 02:42:56
+  - 序号 45111 0.0Mb/s 226 US 16:10:11
+  - 序号 44669 0.0Mb/s 228 TW 07:34:16
+  - 序号 42364 0.0Mb/s 230 US 12:50:46
+- name: 自动测速
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  proxies: *id001
+- name: 故障转移
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  proxies: *id001
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  strategy: round-robin
+  interval: 30
+  tolerance: 100
+  proxies: *id001
+- name: 全球直连
+  type: select
+  proxies:
+  - DIRECT
+- name: 全球拦截
+  type: select
+  proxies:
+  - REJECT
+rules:
+- IP-CIDR,10.0.0.0/8,全球直连,no-resolve
+- IP-CIDR,100.64.0.0/10,全球直连,no-resolve
+- IP-CIDR,127.0.0.0/8,全球直连,no-resolve
+- IP-CIDR,172.16.0.0/12,全球直连,no-resolve
+- IP-CIDR,192.168.0.0/16,全球直连,no-resolve
+- IP-CIDR,198.18.0.0/16,全球直连,no-resolve
+- DOMAIN-SUFFIX,localhost,全球直连
+- DOMAIN-SUFFIX,cn,全球直连
+- DOMAIN-SUFFIX,com.cn,全球直连
+- DOMAIN-SUFFIX,google.com,节点选择
+- DOMAIN-SUFFIX,youtube.com,节点选择
+- DOMAIN-SUFFIX,googlevideo.com,节点选择
+- DOMAIN-SUFFIX,telegram.org,节点选择
+- DOMAIN-SUFFIX,github.com,节点选择
+- DOMAIN-SUFFIX,raw.githubusercontent.com,节点选择
+- DOMAIN-SUFFIX,yahoo.com,节点选择
+- DOMAIN-SUFFIX,twitch.tv,节点选择
+- DOMAIN-SUFFIX,msftconnecttest.com,节点选择
+- PROCESS-NAME,aria2c,全球直连
+- PROCESS-NAME,fdm,全球直连
+- PROCESS-NAME,Folx,全球直连
+- PROCESS-NAME,NetTransport,全球直连
+- PROCESS-NAME,Thunder,全球直连
+- PROCESS-NAME,Transmission,全球直连
+- PROCESS-NAME,uTorrent,全球直连
+- PROCESS-NAME,WebTorrent,全球直连
+- PROCESS-NAME,WebTorrent Helper,全球直连
+- PROCESS-NAME,DownloadService,全球直连
+- PROCESS-NAME,Weiyun,全球直连
+- GEOIP,CN,全球直连
+- MATCH,节点选择
